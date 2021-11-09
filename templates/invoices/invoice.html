@@ -177,29 +177,34 @@
         .page-break {
             page-break-before: always;
         }
+
+        .logo {
+            position: relative;
+        }
     </style>
 </head>
 
 <body>
     <div class="section-header section-left">
         <div class="content-padded">
-            <span class="normal-text">{{ order.billing_address.company_name }}</span>
+            <img src="https://sun2000.vercel.app/icon-512x512.png" width="128" height="128" alt="Logo" class="logo" />
+            <span class="normal-text">Sun2000 GMBH</span>
             <br />
-            <span class="normal-text">{{ order.billing_address.street_address_1 }}</span>
+            <span class="normal-text">Street</span>
             <br />
             {% if order.billing_address.street_address_2 %}
                 <span class="normal-text">{{ order.billing_address.street_address_2 }}</span>
                 <br />
             {% endif %}
-            <span class="normal-text">{{ order.billing_address.city }}</span>
+            <span class="normal-text">City</span>
             <br />
-            <span class="normal-text">{{ order.billing_address.postal_code }}</span>
+            <span class="normal-text">Postal code</span>
             <br />
             {% if order.billing_address.phone %}
-                <span class="normal-text">{{ order.billing_address.phone }}</span>
+                <span class="normal-text">Phone</span>
                 <br />
             {% endif %}
-            <span class="normal-text">{{ order.get_customer_email }}</span>
+            <span class="normal-text">customer@sun2000.de</span>
             <br />
         </div>
     </div>

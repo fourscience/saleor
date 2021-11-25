@@ -5,6 +5,7 @@ PLUGINS_ID_TO_SKIP = [
     "mirumee.webhooks",
     "mirumee.payments.dummy",
     "mirumee.payments.dummy_credit_card",
+    "mirumee.payments.bank_transfer",
     "mirumee.invoicing",
 ]
 
